@@ -1,0 +1,14 @@
+# Secrets: never commit credentials
+.env
+profiles.yml
+*.p8
+
+# dbt build output
+target/
+dbt_packages/
+logs/
+
+# Python and Mac clutter
+.venv/
+__pycache__/
+.DS_Store

@@ -1,0 +1,8 @@
+-- Compute for the project. Suspends after 60 seconds idle to save credits.
+USE ROLE SYSADMIN;
+
+CREATE WAREHOUSE IF NOT EXISTS CLAIMS_WH
+  WAREHOUSE_SIZE = 'XSMALL'
+  AUTO_SUSPEND = 60
+  AUTO_RESUME = TRUE
+  INITIALLY_SUSPENDED = TRUE;
