@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw
+    database: CLAIMS_DW
+    schema: RAW
+    tables:
+      - name: raw_members
+        description: Synthetic member eligibility file, loaded with COPY INTO.
